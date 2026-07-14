@@ -37,6 +37,7 @@ public class MCL_PG_CommandLine {
         );
     }
 
+    @SuppressWarnings("unused")
     public void process(MasterCredentialsLibraryPostgres mcl, PooledConnection conn, String[] args) {
         try {
             switch (args[0]) {
@@ -152,13 +153,13 @@ public class MCL_PG_CommandLine {
 
 
     }
-        public static void main(String[] args) {
-                try {
-                    new MCL_PG_CommandLine();
-                }
-                catch (Exception e) {
-                    e.printStackTrace();
-                }
+     static void main(String[] args) {
+            try {
+                new MCL_PG_CommandLine();
             }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 
 }

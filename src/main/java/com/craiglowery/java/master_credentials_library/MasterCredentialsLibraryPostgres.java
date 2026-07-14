@@ -89,6 +89,7 @@ public class MasterCredentialsLibraryPostgres extends MasterCredentialsLibrary {
      *                                    requirements
      * @throws BackingStoreException     if the backing table cannot be created
      */
+    @SuppressWarnings("unused")
     public MasterCredentialsLibraryPostgres(@NotNull PooledConnection connection) {
         Objects.requireNonNull(connection);
         super();

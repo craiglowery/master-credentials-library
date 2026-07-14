@@ -5,5 +5,6 @@ package com.craiglowery.java.master_credentials_library;
  * with a default configuration.
  */
 public interface AutoProvider {
-    public MasterCredentialsLibrary create() throws BackingStoreException;
+    @SuppressWarnings("unused")
+    MasterCredentialsLibrary create() throws BackingStoreException;
 }
