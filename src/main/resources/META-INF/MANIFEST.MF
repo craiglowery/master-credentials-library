@@ -1,3 +1,4 @@
 Manifest-Version: 1.0
-Main-Class: com.craiglowery.java.master_credentials_library.MCL_PG_CommandLine
+Main-Class: com.craiglowery.java.master_credentials_library.MCL_PG_Comma
+ ndLine
 
