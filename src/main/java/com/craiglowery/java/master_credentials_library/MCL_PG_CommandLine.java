@@ -158,6 +158,7 @@ public class MCL_PG_CommandLine {
                 new MCL_PG_CommandLine();
             }
             catch (Exception e) {
+                //noinspection CallToPrintStackTrace
                 e.printStackTrace();
             }
         }
