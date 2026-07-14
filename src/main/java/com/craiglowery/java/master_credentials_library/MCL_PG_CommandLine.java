@@ -129,7 +129,7 @@ public class MCL_PG_CommandLine {
                         }
                     })
                     );
-            ci.addCommand("list","list","List all keys", (matcher) -> {
+            ci.addCommand("list","list","List all keys", (ignored) -> {
                 System.out.println("Listing all keys:");
                 try (ParameterizedStatement statement = conn.parameterizedStatement("SELECT key FROM "+mcl.getTableName())) {
                     ResultSet resultSet = statement.executeQuery();
@@ -153,7 +153,7 @@ public class MCL_PG_CommandLine {
 
 
     }
-     static void main(String[] args) {
+     static void main(String[] ignored) {
             try {
                 new MCL_PG_CommandLine();
             }
